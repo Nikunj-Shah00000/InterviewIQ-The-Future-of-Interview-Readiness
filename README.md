@@ -16,6 +16,34 @@ AI-powered interview readiness platform that evaluates a student’s technical s
 
 ---
 
+# 🚀 USP
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Biometric-Stress%20Analysis-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/The-Curveball%20Injector-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/The-Imposter%20Syndrome%20Meter-lightgrey?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Micro--Expression-Feedback-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/The-Fluff%20Detector-yellow?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/STAR-Method%20Scoring-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Knowledge%20Map-Heatmaps-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/The-Pause%20Analyzer-informational?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/VR-Office%20Simulations-9cf?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/The-Shadow%20Interviewer-black?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Collaborative-Mock%20Battles-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/30--Second-Pitch%20Gauntlet-critical?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Dynamic-JD%20Scraper-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/The-Reverse%20Interviewer-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Real--time-Wobble%20Alerts-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/AI-Resume%20to%20Voice%20Check-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Readiness-Score%20Passport-yellowgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Crowdsourced-Real--Talk%20Tips-ff69b4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/The-Blind%20Technical%20Challenge-lightgrey?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/AI-Mentor%20Matching-blue?style=for-the-badge" />
+</p>
+
+
+---
+
 # 🌟 Problem Statement
 
 Every year, millions of students graduate and enter the competitive job market. Despite having strong academic backgrounds, many struggle to determine whether they are truly interview-ready.
