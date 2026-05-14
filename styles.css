@@ -1,0 +1,148 @@
+"@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+    background: #0A0A0A;
+    color: #FFFFFF;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background:
+        radial-gradient(ellipse 800px 600px at 10% 0%, rgba(0, 122, 255, 0.10), transparent 60%),
+        radial-gradient(ellipse 600px 400px at 100% 100%, rgba(255, 59, 48, 0.06), transparent 60%),
+        #0A0A0A;
+    background-attachment: fixed;
+}
+
+.font-display { font-family: 'Outfit', sans-serif; letter-spacing: -0.02em; }
+.font-mono-data { font-family: 'JetBrains Mono', monospace; letter-spacing: -0.04em; }
+
+.glass {
+    background: rgba(18, 18, 18, 0.7);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tile {
+    background: #121212;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+.tile:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.18);
+    background: #161616;
+}
+
+.label-tiny {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    color: #A1A1AA;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.btn-primary {
+    background: #007AFF;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.15s ease, transform 0.15s ease;
+}
+.btn-primary:hover { background: #3395FF; color: white; transform: translateY(-1px); }
+.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btn-ghost {
+    background: transparent;
+    color: #FFFFFF;
+    padding: 10px 18px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.14);
+    transition: border-color 0.15s ease, background 0.15s ease;
+}
+.btn-ghost:hover { border-color: rgba(255,255,255,0.4); background: rgba(255,255,255,0.04); }
+
+.input-dark {
+    background: #0F0F0F;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 6px;
+    width: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.input-dark:focus { outline: none; border-color: #007AFF; box-shadow: 0 0 0 3px rgba(0,122,255,0.25); }
+
+.scan-line {
+    background: linear-gradient(180deg, transparent 0%, rgba(0,122,255,0.6) 50%, transparent 100%);
+    height: 1px;
+    width: 100%;
+}
+
+.grain::after {
+    content: \"\";
+    position: fixed; inset: 0; pointer-events: none;
+    background-image: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>\");
+    opacity: 0.35;
+    z-index: 100;
+    mix-blend-mode: overlay;
+}
+
+@keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.85); }
+}
+.pulse-dot { animation: pulse-dot 1.4s ease-in-out infinite; }
+
+@keyframes ekg {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+.ekg-sweep { animation: ekg 3s linear infinite; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #0A0A0A; }
+::-webkit-scrollbar-thumb { background: #27272A; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #3F3F46; }
+
+@layer base {
+    :root {
+        --background: 0 0% 4%;
+        --foreground: 0 0% 98%;
+        --card: 0 0% 7%;
+        --card-foreground: 0 0% 98%;
+        --popover: 0 0% 7%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 211 100% 50%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 0 0% 14.9%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 0 0% 14.9%;
+        --muted-foreground: 0 0% 65%;
+        --accent: 0 0% 14.9%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 16%;
+        --input: 0 0% 14.9%;
+        --ring: 211 100% 50%;
+        --radius: 0.5rem;
+    }
+}
+
+@layer base {
+    * { @apply border-border; }
+    body { @apply bg-background text-foreground; }
+}
+"
